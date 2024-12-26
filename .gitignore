@@ -1,0 +1,41 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Model files and predictions
+model_weights/
+*.h5
+*.pkl
+autogl*_predictions.csv
+
+# Log files
+*.log
+
+# Virtual environment
+venv/
+env/
+
+# Data files
+Fresh/
+Bitcoin Historical Data.csv
+
+/time_series
+
+#model
+src/bitcoin_price_models
+src/catboost_info
+/src/model_weights
+*.json
+
+model.py
+lstm-bitcoin-price-prediction.ipynb
+model.ipynb
+first_pipeline.ipynb
+
+# IDE settings
+.vscode/
+.idea/
