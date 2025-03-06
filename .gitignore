@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 
+try.py
+scraping.ipynb
+
 # Jupyter Notebook
 .ipynb_checkpoints
 *.ipynb_checkpoints/
@@ -22,7 +25,7 @@ env/
 # Data files
 Fresh/
 Bitcoin Historical Data.csv
-
+/data/Bitcoin_tweets.csv
 /time_series
 
 #model
