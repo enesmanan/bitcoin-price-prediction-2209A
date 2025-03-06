@@ -4,7 +4,7 @@ __pycache__/
 
 try.py
 scraping.ipynb
-
+test_predict.py
 # Jupyter Notebook
 .ipynb_checkpoints
 *.ipynb_checkpoints/
