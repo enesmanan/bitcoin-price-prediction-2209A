@@ -30,7 +30,7 @@ Datasets used in the project:
 
 These datasets are merged using proper data alignment and imputation techniques to prevent data leakage while capturing correlations in financial markets. Missing values are handled with appropriate methods that maintain temporal integrity, ensuring that future information is not inadvertently used in training models for past predictions.
 
-![plots](images\dataset_price_plot.png)
+![plots](images/dataset_price_plot.png)
 
 ### Prediction Period and Feature Selection
 
@@ -94,7 +94,7 @@ Model performance comparison was conducted using the following metrics:
 
 It's important to note that all classical machine learning models were evaluated using their default parameters without any hyperparameter optimization. This approach provides a baseline comparison of the models' inherent capabilities for this specific prediction task. Performance could potentially be improved through proper hyperparameter tuning.
 
-![metrics](images\all_model_prediction_comparison.png)
+![metrics](images/all_model_prediction_comparison.png)
 
 Based on the performance metrics in the table above, the top three performing classical machine learning models are:
 
@@ -123,7 +123,7 @@ The LSTM model was trained with a bidirectional architecture to capture temporal
 
 While the LSTM model shows higher RMSE and MAE values compared to some classical models, it demonstrates superior ability to capture the temporal dynamics of Bitcoin prices, especially for longer prediction horizons. The model's strength lies in its capacity to learn complex patterns over time sequences, making it particularly valuable for financial time series forecasting.
 
-![lstm](images\LSTM_result.png)
+![lstm](images/LSTM_result.png)
 
 ### AutoGluon Results
 
