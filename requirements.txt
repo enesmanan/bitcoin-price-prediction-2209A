@@ -1,0 +1,16 @@
+numpy
+pandas
+matplotlib
+seaborn
+plotly
+scikit-learn
+tabulate
+tensorflow
+keras
+xgboost
+lightgbm
+catboost
+autogluon
+scipy
+statsmodels
+jupyterlab
