@@ -56,14 +56,10 @@ While numerous features were initially generated from the raw data, the final se
 The following models were used in the project:
 
 ### Classical Machine Learning Models
-- Linear Regression
-- Decision Tree
-- Random Forest
-- AdaBoost
-- XGBoost
-- LightGBM
-- CatBoost
-- Support Vector Regression (SVR)
+- **Linear Models**: Linear Regression
+- **Tree-based Models**: Decision Tree, Random Forest
+- **Boosting Methods**: AdaBoost, XGBoost, LightGBM, CatBoost
+- **Kernel Methods**: Support Vector Regression (SVR)
 
 ### Deep Learning Models
 - Bidirectional LSTM (Long Short-Term Memory) networks
@@ -78,6 +74,8 @@ Model performance comparison was conducted using the following metrics:
 - MAE (Mean Absolute Error)
 - R² (Determination Coefficient)
 - MAPE (Mean Absolute Percentage Error)
+
+> **Note on R² in Time Series**: While R² is included as a metric, it should be interpreted with caution in time series forecasting. R² measures the proportion of variance explained by the model compared to a simple mean model, which may not be appropriate for non-stationary time series data like cryptocurrency prices. High R² values in financial time series can sometimes be misleading due to trends and should be considered alongside other metrics like RMSE and MAE.
 
 ### Model Performance Visualizations
 
@@ -109,17 +107,16 @@ Based on the performance metrics in the table above, the top three performing cl
 The LSTM model was trained with a bidirectional architecture to capture temporal patterns in both directions. The model achieved the following performance metrics:
 
 **Training Metrics:**
-- Training Loss: 0.2423
-- Training MAE: 0.1822
-- Validation Loss: 0.2222
-- Validation MAE: 0.1649
+
+| Training Loss | Training MAE | Validation Loss | Validation MAE |
+|---------------|--------------|-----------------|----------------|
+| 0.2423        | 0.1822       | 0.2222          | 0.1649         |
 
 **Test Metrics:**
-- Scaled RMSE: 0.0712
-- RMSE: 1,204.95
-- MAE: 1,049.35
-- R² Score: 0.6956
-- MAPE: 1.67%
+
+| Scaled RMSE | RMSE     | MAE      | R² Score | MAPE  |
+|-------------|----------|----------|----------|-------|
+| 0.0712      | 1,204.95 | 1,049.35 | 0.6956   | 1.67% |
 
 While the LSTM model shows higher RMSE and MAE values compared to some classical models, it demonstrates superior ability to capture the temporal dynamics of Bitcoin prices, especially for longer prediction horizons. The model's strength lies in its capacity to learn complex patterns over time sequences, making it particularly valuable for financial time series forecasting.
 
@@ -174,7 +171,6 @@ bitcoin-price-prediction/
 │   └── merged_data.csv             # Merged dataset
 ├── src/                            
 │   ├── pipeline.ipynb              # Main pipeline notebook
-│   │
 │   ├── preprocessing/              
 │   │   └── data_preprocessor.py    # Data preprocessing classes
 │   ├── model/                      
